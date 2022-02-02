@@ -10,8 +10,20 @@
     <title>RFIG</title>
 </head>
 
-<body style="background-image: url(/static/bg.png);background-repeat: no-repeat;background-size: 100%;">
-    <h1 class="about-title">Welcome to Random Flight Information Generator</h1>
+<body style="background-image: linear-gradient(to top right,#f1d18a, #f73859);background-repeat: no-repeat;min-height:
+    max-content;">
+    <h1 class="about-title">Welcome to Random Flight Information Generator</h1><br>
+    <h1 class="about-title" style="font-size: x-large;">This website gives real-time information about planes from a
+        database of over 3,000 planes!</h1><br>
+    <img style="border-radius: 10px;display: block;margin-left: auto;margin-right: auto;width: 50%;height: 350px;"
+        src="/static/plane.png" alt="plane"><br>
+    <h1 class="about-title">To get the info click on the button below!!</h1><br>
+    <div class="wrapper">
+        <form action="/info">
+            <button class="button" type="submit">Click me lmao</button>
+        </form>
+
+    </div>
 </body>
 
 </html>

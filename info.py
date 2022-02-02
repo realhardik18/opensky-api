@@ -3,7 +3,7 @@ import random
 import ast
 
 
-def info():
+def info(a):
     api = OpenSkyApi()
     states = api.get_states()
     flight_choosen = states.states[random.randint(0, len(states.states))]

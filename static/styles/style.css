@@ -3,3 +3,38 @@
   font-family: Noto Sans;
   text-align: center;
 }
+
+.button {
+  background-color: #f73859;
+  color: black;
+  border: none;
+  border-radius: 10px;
+  transition-duration: 0.4;
+  align-self: center;
+  font-size: x-large;
+  width: 150px;
+  height: 50px;
+  width: 50%;
+}
+
+.button:hover {
+  background-color: #4caf50; /* Green */
+  color: white;
+  cursor: pointer;
+}
+
+.wrapper {
+  text-align: center;
+}
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(90, 90, 90);
+}
+
+::-webkit-scrollbar-track {
+  background: rgba(0, 0, 0, 0.2);
+}
