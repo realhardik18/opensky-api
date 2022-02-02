@@ -12,7 +12,8 @@ def home():
 
 @app.route('/info')
 def infoo():
-    return render_template("info.html")
+    print(info())
+    return render_template("info.html", i=info())
 
 
 def run():

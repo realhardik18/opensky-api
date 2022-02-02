@@ -10,8 +10,55 @@
     <title>Info</title>
 </head>
 
-<body>
-    <h1>i</h1>
+<body style="background-image: linear-gradient(to top right,#f1d18a, #f73859);background-repeat: no-repeat;min-height:
+max-content;">
+    <h1 class="about-title">Information About Flight: {{i["callsign"]}}</h1>
+    <h1 class="about-title" style="font-size: x-large;">This number is also known as the <a
+            href="https://en.wikipedia.org/wiki/Aviation_call_signs#:~:text=In%20most%20countries%2C%20unscheduled%20general,Organization%20(ICAO)%20phonetic%20alphabet.">callsign</a>
+        of the plane</h1>
+    <h1 class="about-title" style="font-size: x-large;">This corresponds to the registration number of the aircraft</h1>
+    <br>
+    <table style="margin-left: auto;margin-right: auto;width: 50%;">
+        <tr>
+            <th class="about-title">Baro-Meter altitude</th>
+            <th class="about-title">Geographical altitude</th>
+        </tr>
+        <tr>
+            <td class="about-title" style="font-size: x-large;">{{i['baro_altitude']}} meters</td>
+            <td class="about-title" style="font-size: x-large;">{{i['geo_altitude']}} meters</td>
+        </tr>
+    </table>
+    <br>
+    <table style="margin-left: auto;margin-right: auto;width: 50%;">
+        <tr>
+            <th class="about-title"> <img src="/static/globe.png" alt="globe"
+                    style="border-radius: 10px;display: block;"></th>
+            <th class="about-title">Origin of plane: {{i['origin_country']}}</th>
+        </tr>
+        <br>
+        <table style="margin-left: auto;margin-right: auto;width: 50%;">
+            <tr>
+                <th class="about-title" style="text-align: left;">Current Veloctiy of plane<br><span
+                        style="font-size: x-large;">{{i['velocity']}} km/ph</span></th>
+                <th class="about-title" style="text-align: right;"><img
+                        src="https://c.tenor.com/zCv6eiCrAKEAAAAC/tom-and-jerry-flee.gif" alt="tom and jeryy run"></th>
+            </tr>
+        </table>
+        <br>
+        <table style="margin-left: auto;margin-right: auto;width: 50%;">
+            <tr>
+                <th class="about-title">Latitude</th>
+                <th class="about-title">Longitude</th>
+            </tr>
+            <tr>
+                <td class="about-title" style="font-size: x-large;">{{i['latitude']}}</td>
+                <td class="about-title" style="font-size: x-large;">{{i['longitude']}}</td>
+            </tr>
+        </table>
+        <br>
+        <h1 class="about-title">Made by <a href="https://realhardik18.github.io">Realhardik18</a></h1>
+        <h1 class="about-title">Source Code on <a href="https://github.com/realhardik18/opensky-api">Github</a></h1>
+        <h1 class="about-title">Want to find another plane? <a href="/info">Click here!</a></h1>
 </body>
 
 </html>
