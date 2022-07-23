@@ -17,4 +17,7 @@ def info():
     return result
 
 
+def test():
+    return 'hello'
+
 # print(available_states())
